@@ -49,188 +49,115 @@ module.exports = Object.freeze({
     questions_en_US: [
         {
             index: 1,
-            question: 'What is the name for a group of lions?',
-            answers: ['pack', 'pride', 'den', 'frat'],
-            correct_answer: 'pride'
+            question: 'In Pokémon Yellow, what does Pikachu do throughout the entire game?',
+            answers: ['Paints your toenails', 'Zaps things with electricity', 'Tags along with you', 'Keeps trading you for other Trainers'],
+            correct_answer: 'Tags along with you'
         },
         {
-          index: 2,
-          question: 'What is the only type of bear native to South America?',
-          answers: ['brown bear', 'kodiac', 'giant panda', 'spectacled bear'],
-          correct_answer: 'spectacled bear'
+            index: 2,
+            question: 'Where’s the best place to encounter wild Pokémon?',
+            answers: ['In tall grass', 'At the Pokémon League', 'Inside a Gym', 'In the zoo'],
+            correct_answer: 'In tall grass'
         },
         {
             index: 3,
-            question: 'What type of animal is a seahorse?',
-            answers: ['crustacean', 'arachnid', 'fish', 'shell'],
-            correct_answer: 'fish'
+            question: 'What can you do to make Pikachu really, really happy in Pokémon Red, Pokémon Blue, and Pokémon Yellow?',
+            answers: ['Feed it!', 'Talk to it!', 'Use it to win in battle!', 'Give it a toy!'],
+            correct_answer: 'Use it to win in battle!'
         },
         {
             index: 4,
-            question: 'What color are zebras?',
-            answers: ['white with black stripes', 'black with white stripes'],
-            correct_answer: 'black with white stripes'
+            question: 'What’s the name of the building where you take your Pokémon to get healed?',
+            answers: ['Pokémon Disco', 'Pokémon Emergency Clinic', 'Pokémon Hot Springs', 'Pokémon Center'],
+            correct_answer: 'Pokémon Center'
         },
         {
             index: 5,
-            question: 'What is the fastest water animal?',
-            answers: ['porpoise', 'sailfish', 'flying fish', 'tuna'],
-            correct_answer: 'sailfish'
+            question: 'What makes Lt. Surge such a tough opponent?',
+            answers: ['He has awesome hair', 'He’s a Pokémon Gym Leader', 'He has a great sense of style', 'He has a photographic memory'],
+            correct_answer: 'He’s a Pokémon Gym Leader'
         },
         {
             index: 6,
-            question: 'What is the only venomous snake found in Britain?',
-            answers: ['cobra', 'coral snake', 'copperhead', 'adder'],
-            correct_answer: 'adder'
-        },
-        {
-            index: 7,
-            question: 'What is a female donkey called?',
-            answers: ['joey', 'jenny', 'janet'],
-            correct_answer: 'jenny'
-        },
-        {
-            index: 8,
-            question: 'What land mammal other than man has the longest lifespan?',
-            answers: ['blue whale', 'dolphin', 'elephant', 'orangutan'],
-            correct_answer: 'elephant'
-        },
-        {
-            index: 9,
-            question: 'Eskimos call what kind of creature a nanook?',
-            answers: ['penguin', 'narwhal', 'polar bear', 'caribou'],
-            correct_answer: 'polar bear'
-        },
-        {
-            index: 10,
-            question: 'Lupus is the Latin name for what animal?',
-            answers: ['dog', 'cat', 'wolf', 'fox'],
-            correct_answer: 'wolf'
+            question: 'How can a Pokémon evolve?',
+            answers: ['Level it up', 'Trade it with a friend', 'Give it a specific item', 'All of the above'],
+            correct_answer: 'All of the above'
         }
-
     ],
     questions_en_GB: [
-      {
-          index: 1,
-          question: 'What is the name for a group of lions?',
-          answers: ['pack', 'pride', 'den', 'frat'],
-          correct_answer: 'pride'
-      },
-      {
-          index: 2,
-          question: 'What is the only type of bear native to South America?',
-          answers: ['brown bear', 'kodiac', 'giant panda', 'spectacled bear'],
-          correct_answer: 'spectacled bear'
-      },
-      {
-          index: 3,
-          question: 'What type of animal is a seahorse?',
-          answers: ['crustacean', 'arachnid', 'fish', 'shell'],
-          correct_answer: 'fish'
-      },
-      {
-          index: 4,
-          question: 'What color are zebras?',
-          answers: ['white with black stripes', 'black with white stripes'],
-          correct_answer: 'black with white stripes'
-      },
-      {
-          index: 5,
-          question: 'What is the fastest water animal?',
-          answers: ['porpoise', 'sailfish', 'flying fish', 'tuna'],
-          correct_answer: 'sailfish'
-      },
-      {
-          index: 6,
-          question: 'What is the only venomous snake found in Britain?',
-          answers: ['cobra', 'coral snake', 'copperhead', 'adder'],
-          correct_answer: 'adder'
-      },
-      {
-          index: 7,
-          question: 'What is a female donkey called?',
-          answers: ['joey', 'jenny', 'janet'],
-          correct_answer: 'jenny'
-      },
-      {
-          index: 8,
-          question: 'What land mammal other than man has the longest lifespan?',
-          answers: ['blue whale', 'dolphin', 'elephant', 'orangutan'],
-          correct_answer: 'elephant'
-      },
-      {
-          index: 9,
-          question: 'Eskimos call what kind of creature a nanook?',
-          answers: ['penguin', 'narwhal', 'polar bear', 'caribou'],
-          correct_answer: 'polar bear'
-      },
-      {
-          index: 10,
-          question: 'Lupus is the Latin name for what animal?',
-          answers: ['dog', 'cat', 'wolf', 'fox'],
-          correct_answer: 'wolf'
-      }
-  ],
-  questions_de_DE: [
-    {
-        index: 1,
-        question: 'Wie wird eine Gruppe von Löwen genannt?',
-        answers: ['Rotte', 'Rudel', 'Schule', 'Meute'],
-        correct_answer: 'Rudel'
-    },
-    {
-        index: 2,
-        question: 'Welches ist die einzige aus Südamerika stammende Bärenart?',
-        answers: ['Braunbär', 'Kodiakbär', 'Riesenpanda', 'Brillenbär'],
-        correct_answer: 'Brillenbär'
-    },
-    {
-        index: 3,
-        question: 'Was für eine Art Tier ist ein Seepferdchen?',
-        answers: ['Krustentier', 'Spinnentier', 'Fisch', 'Muschel'],
-        correct_answer: 'Fisch'
-    },
-    {
-        index: 4,
-        question: 'Welche Farbe haben Zebras?',
-        answers: ['Weiß mit schwarzen Streifen', 'Schwarz mit weißen Streifen'],
-        correct_answer: 'Schwarz mit weißen Streifen'
-    },
-    {
-        index: 5,
-        question: 'Was ist das schnellste Wassertier?',
-        answers: ['Schweinswal', 'Fächerfisch', 'Fliegender Fisch', 'Thunfisch'],
-        correct_answer: 'Fächerfisch'
-    },
-    {
-        index: 6,
-        question: 'Welches ist die einzige giftige Schlange in Großbritannien?',
-        answers: ['Kobra', 'Korallenschlange', 'Mokassinschlange', 'Kreuzotter'],
-        correct_answer: 'Kreuzotter'
-    },
-    {
-        index: 7,
-        question: 'Was ist der Name eines berühmten männlichen Eisbären?',
-        answers: ['Sven', 'Knut', 'Olaf'],
-        correct_answer: 'Knut'
-    },
-    {
-        index: 8,
-        question: 'Welches Landsäugetier hat abgesehen vom Menschen die längste Lebensdauer?',
-        answers: ['Blauwal', 'Delfin', 'Elefant', 'Orang-Utan'],
-        correct_answer: 'Elefant'
-    },
-    {
-        index: 9,
-        question: 'Welches Tier bezeichnen die Eskimos als Nanook?',
-        answers: ['Pinguin', 'Narwal', 'Eisbär', 'Karibu'],
-        correct_answer: 'Eisbär'
-    },
-    {
-        index: 10,
-        question: 'Lupus ist der lateinische Name für welches Tier?',
-        answers: ['Hund', 'Katze', 'Wolf', 'Fuchs'],
-        correct_answer: 'Wolf'
-    }
-]
+        {
+            index: 1,
+            question: 'In Pokémon Yellow, what does Pikachu do throughout the entire game?',
+            answers: ['Paints your toenails', 'Zaps things with electricity', 'Tags along with you', 'Keeps trading you for other Trainers'],
+            correct_answer: 'Tags along with you'
+        },
+        {
+            index: 2,
+            question: 'Where’s the best place to encounter wild Pokémon?',
+            answers: ['In tall grass', 'At the Pokémon League', 'Inside a Gym', 'In the zoo'],
+            correct_answer: 'In tall grass'
+        },
+        {
+            index: 3,
+            question: 'What can you do to make Pikachu really, really happy in Pokémon Red, Pokémon Blue, and Pokémon Yellow?',
+            answers: ['Feed it!', 'Talk to it!', 'Use it to win in battle!', 'Give it a toy!'],
+            correct_answer: 'Use it to win in battle!'
+        },
+        {
+            index: 4,
+            question: 'What’s the name of the building where you take your Pokémon to get healed?',
+            answers: ['Pokémon Disco', 'Pokémon Emergency Clinic', 'Pokémon Hot Springs', 'Pokémon Center'],
+            correct_answer: 'Pokémon Center'
+        },
+        {
+            index: 5,
+            question: 'What makes Lt. Surge such a tough opponent?',
+            answers: ['He has awesome hair', 'He’s a Pokémon Gym Leader', 'He has a great sense of style', 'He has a photographic memory'],
+            correct_answer: 'He’s a Pokémon Gym Leader'
+        },
+        {
+            index: 6,
+            question: 'How can a Pokémon evolve?',
+            answers: ['Level it up', 'Trade it with a friend', 'Give it a specific item', 'All of the above'],
+            correct_answer: 'All of the above'
+        }
+    ],
+    questions_de_DE: [
+        {
+            index: 1,
+            question: 'Was macht Pikachu in Pokémon Yellow während des gesamten Spiels?',
+            answers: ['Malt deine Fußnägel', 'Zappt Dinge mit Strom', 'Tags zusammen mit dir', 'Hält dich für andere Trainer ein'],
+            correct_answer: 'Tags zusammen mit dir'
+        },
+        {
+            index: 2,
+            question: 'Wo ist der beste Ort, um wilde Pokémon zu treffen?',
+            answers: ['In hohem Gras', 'In der Pokémon Liga', 'In einem Fitnessstudio', 'Im Zoo'],
+            correct_answer: 'In hohem Gras'
+        },
+        {
+            index: 3,
+            question: 'Was können Sie tun, um Pikachu in Pokémon Red, Pokémon Blue und Pokémon Yellow wirklich, wirklich glücklich zu machen?',
+            answers: ['Füttere es!', 'Sprich damit!', 'Verwenden Sie es, um im Kampf zu gewinnen!', 'Gib ihm ein Spielzeug!'],
+            correct_answer: 'Verwenden Sie es, um im Kampf zu gewinnen!'
+        },
+        {
+            index: 4,
+            question: 'Wie heißt das Gebäude, in das Sie Ihr Pokémon bringen, um geheilt zu werden?',
+            answers: ['Disco-Pokémon', 'Pokémon-Notfallklinik', 'Heiße Quellen von Pokémon', 'Pokémon Center'],
+            correct_answer: 'Pokémon Center'
+        },
+        {
+            index: 5,
+            question: 'Was macht Lt. Surge zu einem harten Gegner?',
+            answers: ['Er hat tolle Haare', 'Er ist ein Pokémon-Übungsleiter', 'Er hat einen großartigen Sinn für Stil', 'Er hat ein fotografisches Gedächtnis'],
+            correct_answer: 'Er ist ein Pokémon-Übungsleiter'
+        },
+        {
+            index: 6,
+            question: 'Wie kann sich ein Pokémon entwickeln?',
+            answers: ['Nivelliere es', 'Tausche es mit einem Freund', 'Vergeben Sie einen bestimmten Artikel', 'Alles das oben Genannte'],
+            correct_answer: 'Alles das oben Genannte'
+        }
+    ]
 });

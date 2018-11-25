@@ -13,8 +13,8 @@
 
 const questions = require('./questions');
 const settings = require('./settings');
-const GAME_TITLE = 'Better with Buttons Trivia';
-const GAME_TITLE_GERMAN = 'Besser mit Buttons Trivia';
+const GAME_TITLE = '2 B A Master';
+const GAME_TITLE_GERMAN = '2 B A Meister';
 
 const messages = {
   en: {
@@ -25,7 +25,7 @@ const messages = {
           'What would you like to do? ',
         reprompt: "Sorry, I didn't catch that, what would you like to do next?",
         displayTitle: GAME_TITLE + ' - Help',
-        displayText: 'This is a trivia game for the Echo Buttons. ' +
+        displayText: 'This is a Pokémon trivia game for the Echo Buttons. ' +
           'To get started just ask me to play a game.'
       },
       'UNHANDLED_REQUEST': {
@@ -42,32 +42,32 @@ const messages = {
       //
       'START_GAME': {
         outputSpeech: "Welcome to " + GAME_TITLE + ". This game supports up to " +
-          settings.GAME.MAX_PLAYERS + " players. " +
-          "How many players are there?",
-        reprompt: "How many players?",
+          settings.GAME.MAX_PLAYERS + " trainers. " +
+          "How many trainers are there?",
+        reprompt: "How many trainers?",
         displayTitle: GAME_TITLE + " - Welcome",
         displayText: "Welcome to " + GAME_TITLE + ". This game supports up to " +
-          settings.GAME.MAX_PLAYERS + " players."
+          settings.GAME.MAX_PLAYERS + " trainers."
       },
       'RESUME_GAME': {
         outputSpeech: 'Ok, we will pick up where you left off. ' +
-          'How many players will be playing?',
-        reprompt: 'How many players?',
+          'How many trainers will be playing?',
+        reprompt: 'How many trainers?',
         displayTitle: GAME_TITLE + " - Welcome",
         displayText: "Welcome back!"
       },
       'DONT_RESUME_GAME': {
-        outputSpeech: 'Ok, lets start a new game. How many players will be playing?',
-        reprompt: 'How many players?',
+        outputSpeech: 'Ok, lets start a new game. How many trainers will be playing?',
+        reprompt: 'How many trainers?',
         displayTitle: GAME_TITLE + " - Welcome",
         displayText: "Ok. Let's start a new game!"
       },
       'ASK_TO_RESUME': {
-        outputSpeech: "It looks like you have a {{player_count}} player game in progress, " +
+        outputSpeech: "It looks like you have a {{player_count}} trainer game in progress, " +
           "would you like to resume?",
         reprompt: 'Would you like to resume the last game?',
         displayTitle: GAME_TITLE + " - Welcome",
-        displayText: "You have a {{player_count}} player game in progress."
+        displayText: "You have a {{player_count}} trainer game in progress."
       },
       'PLAYERCOUNT_INVALID': {
         outputSpeech: 'Please say a number between one and ' + settings.GAME.MAX_PLAYERS,
@@ -85,43 +85,43 @@ const messages = {
       //
       'ROLL_CALL_HELP': {
         outputSpeech: 'This is a trivia game for Echo Buttons. ' +
-          'In order to play the game, each player must check in by ' +
+          'In order to play the game, each trainer must check in by ' +
           'pressing an Echo Button. Would you like to continue and ' +
-          'check players in for the game?',
+          'check trainers in for the game?',
         reprompt: "Sorry, I didn't catch that, what would you like to do next?",
         displayTitle: GAME_TITLE + ' - Help',
-        displayText: 'In order to play the game, each player must check in by ' +
+        displayText: 'In order to play the game, each trainer must check in by ' +
           'pressing an Echo Button. Would you like to continue?'
       },
       'ROLL_CALL_CONTINUE': {
-        outputSpeech: "Ok. Players, press your buttons now, " +
+        outputSpeech: "Ok. trainers, press your buttons now, " +
           "so I'll know which buttons you will be using.",
         displayTitle: GAME_TITLE + " - Welcome",
-        displayText: "To resume the game, each player, please press your button once!"
+        displayText: "To resume the game, each trainer, please press your button once!"
       },
       'ROLL_CALL_TIME_OUT': {
         outputSpeech: "<say-as interpret-as='interjection'>uh oh</say-as>, " +
-          "looks like times up and I haven't heard from all players. " +
+          "looks like times up and I haven't heard from all trainers. " +
           "Did you want to continue?",
         reprompt: "should we continue?"
       },
       'ROLL_CALL_RESUME_GAME': {
-        outputSpeech: "To resume the game, each player, please press your button once!",
+        outputSpeech: "To resume the game, each trainer, please press your button once!",
         displayTitle: GAME_TITLE + " - Welcome",
-        displayText: "To resume the game, each player, please press your button once!"
+        displayText: "To resume the game, each trainer, please press your button once!"
       },
       'ROLL_CALL_COMPLETE': {
         outputSpeech: ["Great! We can start the game. Are you ready?",
-        "Awesome. All players registered. Are you ready to start the game?"],
+        "Awesome. All trainers registered. Are you ready to start the game?"],
         reprompt: "Ready to start the game?",
         displayTitle: GAME_TITLE + " - Welcome",
         displayText: "Are you ready to start the game?"
       },
       'ROLL_CALL_HELLO_PLAYER': {
-        outputSpeech: "Hello, player {{player_number}}. "
+        outputSpeech: "Hello, trainer {{player_number}}. "
       },
       'ROLL_CALL_NEXT_PLAYER_PROMPT': {
-        outputSpeech: "Ok, your turn Player {{player_number}}, press your button."
+        outputSpeech: "Ok, your turn trainer {{player_number}}, press your button."
       },
 
       //
@@ -164,17 +164,17 @@ const messages = {
         reprompt: "Would you like to keep playing?"
       },
       'BUZZ_IN_DURING_PLAY': {
-        outputSpeech: "Ok, player {{player_number}}, what's the answer?",
-        reprompt: "Player {{player_number}}, are you there?"
+        outputSpeech: "Ok, trainer {{player_number}}, what's the answer?",
+        reprompt: "trainer {{player_number}}, are you there?"
       },
       'CORRECT_ANSWER_DURING_PLAY': {
-        outputSpeech: "Correct! Great job player {{player_number}}."
+        outputSpeech: "Correct! Great job trainer {{player_number}}."
       },
       'INCORRECT_ANSWER_DURING_PLAY': {
-        outputSpeech: "Sorry, wrong answer player {{player_number}}."
+        outputSpeech: "Sorry, wrong answer trainer {{player_number}}."
       },
       'INCORRECT_ANSWER_TOO_MANY_TIMES': {
-        outputSpeech: "Sorry, wrong answer player {{player_number}}. " +
+        outputSpeech: "Sorry, wrong answer trainer {{player_number}}. " +
           "Let's try another question."
       },
       'SINGLE_PLAYER_CORRECT_ANSWER_DURING_PLAY': {
@@ -203,13 +203,13 @@ const messages = {
         displayTitle: GAME_TITLE + " - Question {{question_number}}"
       },
       'ANSWER_QUESTION_CORRECT_DISPLAY': {
-        displayTitle: GAME_TITLE + " - Player {{player_number}}",
+        displayTitle: GAME_TITLE + " - trainer {{player_number}}",
         displayText: ["Great job! That's right.",
         "Awesome! That's the answer.",
         "Correct! You got it."]
       },
       'ANSWER_QUESTION_INCORRECT_DISPLAY': {
-        displayTitle: GAME_TITLE + " - Player {{player_number}}",
+        displayTitle: GAME_TITLE + " - trainer {{player_number}}",
         displayText: ["Opps! That's not right.",
         "Oh no! That's not the answer.",
         "No, that's not it!"]

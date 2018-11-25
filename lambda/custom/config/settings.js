@@ -47,7 +47,7 @@ module.exports = (function () {
     MAX_PLAYERS: 4,
     QUESTIONS_PER_GAME: 6,
     QUESTIONS_PER_ROUND: 2,
-    ANSWER_SIMILARITY: .60,
+    ANSWER_SIMILARITY: .30,
     MAX_ANSWERS_PER_QUESTION: 4,
     SHUFFLE_QUESTIONS: true,
     NOTIFY_CORRECT_ANSWER: true
@@ -92,7 +92,7 @@ module.exports = (function () {
    */
   const COLORS = Object.freeze({
     // Color you want the buttons to be when expecting input
-    QUESTION_COLOR: 'purple',
+    QUESTION_COLOR: 'yellow',
     // Color you want the first button to chime in to be
     BUZZ_IN_COLOR: 'blue',
     // Color you want the other buttons who didn't chime in
