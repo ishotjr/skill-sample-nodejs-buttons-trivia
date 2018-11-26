@@ -1,7 +1,7 @@
 {
    "interactionModel":{
       "languageModel":{
-         "invocationName":"better buttons trivia",
+         "invocationName":"two be a master",
          "intents":[
             {
                "name":"AMAZON.CancelIntent",
@@ -44,14 +44,14 @@
                   }
                ],
                "samples":[
-                  "{players} players",
+                  "{players} trainers",
                   "there are {players}",
-                  "there are {players} players",
+                  "there are {players} trainers",
                   "there are {players} of us",
                   "we have {players}",
-                  "we have {players} players",
+                  "we have {players} trainers",
                   "there will be {players}",
-                  "there will be {players} players"
+                  "there will be {players} trainers"
                ]
             },
             {
@@ -92,6 +92,9 @@
             },
             {
                "name":"PlayGame",
+               "slots":[
+
+               ],
                "samples":[
                   "play",
                   "play the game",
@@ -124,6 +127,9 @@
             },
             {
                "name":"DontKnowIntent",
+               "slots":[
+
+               ],
                "samples":[
                   "I don't know",
                   "don't know",
@@ -225,194 +231,129 @@
          ],
          "types":[
             {
+               "name":"answers",
                "values":[
                   {
                      "name":{
-                        "value":"fox"
+                        "value":"Paints your toenails"
                      }
                   },
                   {
                      "name":{
-                        "value":"wolf"
+                        "value":"Zaps things with electricity"
                      }
                   },
                   {
                      "name":{
-                        "value":"cat"
+                        "value":"Tags along with you"
                      }
                   },
                   {
                      "name":{
-                        "value":"dog"
+                        "value":"Keeps trading you for other Trainers"
                      }
                   },
                   {
                      "name":{
-                        "value":"caribou"
+                        "value":"In tall grass"
                      }
                   },
                   {
                      "name":{
-                        "value":"polar bear"
+                        "value":"At the Pokémon League"
                      }
                   },
                   {
                      "name":{
-                        "value":"narwhal"
+                        "value":"Inside a Gym"
                      }
                   },
                   {
                      "name":{
-                        "value":"penguin"
+                        "value":"In the zoo"
                      }
                   },
                   {
                      "name":{
-                        "value":"orangutan"
+                        "value":"Feed it!"
                      }
                   },
                   {
                      "name":{
-                        "value":"elephant"
+                        "value":"Talk to it!"
                      }
                   },
                   {
                      "name":{
-                        "value":"kodiac"
+                        "value":"Use it to win in battle!"
                      }
                   },
                   {
                      "name":{
-                        "value":"blue whale"
+                        "value":"Give it a toy!"
                      }
                   },
                   {
                      "name":{
-                        "value":"janet"
+                        "value":"Pokémon Disco"
                      }
                   },
                   {
                      "name":{
-                        "value":"jenny"
+                        "value":"Pokémon Emergency Clinic"
                      }
                   },
                   {
                      "name":{
-                        "value":"joey"
+                        "value":"Pokémon Hot Springs"
                      }
                   },
                   {
                      "name":{
-                        "value":"adder"
+                        "value":"Pokémon Center"
                      }
                   },
                   {
                      "name":{
-                        "value":"copperhead"
+                        "value":"He has awesome hair"
                      }
                   },
                   {
                      "name":{
-                        "value":"coral snake"
+                        "value":"He’s a Pokémon Gym Leader"
                      }
                   },
                   {
                      "name":{
-                        "value":"cobra"
+                        "value":"He has a great sense of style"
                      }
                   },
                   {
                      "name":{
-                        "value":"sailfish"
+                        "value":"He has a photographic memory"
                      }
                   },
                   {
                      "name":{
-                        "value":"porpoise"
+                        "value":"Level it up"
                      }
                   },
                   {
                      "name":{
-                        "value":"black with white stripes"
+                        "value":"Trade it with a friend"
                      }
                   },
                   {
                      "name":{
-                        "value":"white with black stripes"
+                        "value":"Give it a specific item"
                      }
                   },
                   {
                      "name":{
-                        "value":"shell"
-                     }
-                  },
-                  {
-                     "name":{
-                        "value":"fish"
-                     }
-                  },
-                  {
-                     "name":{
-                        "value":"arachnid"
-                     }
-                  },
-                  {
-                     "name":{
-                        "value":"crustacean"
-                     }
-                  },
-                  {
-                     "name":{
-                        "value":"spectacled bear"
-                     }
-                  },
-                  {
-                     "name":{
-                        "value":"giant panda"
-                     }
-                  },
-                  {
-                     "name":{
-                        "value":"dolphins"
-                     }
-                  },
-                  {
-                     "name":{
-                        "value":"brown bear"
-                     }
-                  },
-                  {
-                     "name":{
-                        "value":"frat"
-                     }
-                  },
-                  {
-                     "name":{
-                        "value":"den"
-                     }
-                  },
-                  {
-                     "name":{
-                        "value":"pride"
-                     }
-                  },
-                  {
-                     "name":{
-                        "value":"pack"
-                     }
-                  },
-                  {
-                     "name":{
-                        "value":"flying fish"
-                     }
-                  },
-                  {
-                     "name":{
-                        "value":"tuna"
+                        "value":"All of the above"
                      }
                   }
-               ],
-               "name":"answers"
+               ]
             }
          ]
       }
